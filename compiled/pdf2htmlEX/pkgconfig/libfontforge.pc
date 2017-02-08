@@ -1,0 +1,9 @@
+prefix=/app/vendor/fontforge
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+Libs: -L${libdir} -lfontforge
+Cflags: -I${includedir}/fontforge
+Name: FontForge
+Description: Outline font editor.
+Version: 20120731-b

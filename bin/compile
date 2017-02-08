@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+indent() {
+  sed -u 's/^/       /'
+}
+
+BUILD_DIR="$1"
+SOURCE_DIR="$(dirname $0)/../compiled/pdf2htmlEX"
+TARGET_DIR="/usr/local/pdf2htmlEX"
+
+echo "-----> Copying files to $TARGET_DIR"
+
+sudo mkdir -p "$TARGET_DIR"
+sudo cp -r "$SOURCE_DIR" "$TARGET_DIR"
