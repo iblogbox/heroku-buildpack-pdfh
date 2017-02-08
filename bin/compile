@@ -11,4 +11,4 @@ TARGET_DIR="$BUILD_DIR/vendor/"
 echo "-----> Copying files to $TARGET_DIR"
 
 mkdir -p "$TARGET_DIR"
-cp -r "$SOURCE_DIR/geoip" "$TARGET_DIR"
+cp -r "$SOURCE_DIR/pdf2htmlEX" "$TARGET_DIR"
