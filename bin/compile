@@ -12,4 +12,4 @@ echo "-----> Copying files to $TARGET_DIR"
 
 mkdir -p "$TARGET_DIR"
 cp -r "$SOURCE_DIR/pdf2htmlEX" "$TARGET_DIR"
-chmod +x "$SOURCE_DIR/pdf2htmlEX/pdf2htmlEX"
+chmod +x "$TARGET_DIR/pdf2htmlEX"
