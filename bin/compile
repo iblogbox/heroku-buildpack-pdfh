@@ -5,10 +5,10 @@ indent() {
 }
 
 BUILD_DIR="$1"
-SOURCE_DIR="$(dirname $0)/../compiled/pdf2htmlEX"
-TARGET_DIR="/usr/local/pdf2htmlEX"
+SOURCE_DIR="$(dirname $0)/../compiled"
+TARGET_DIR="$BUILD_DIR/vendor/"
 
 echo "-----> Copying files to $TARGET_DIR"
 
-sudo mkdir -p "$TARGET_DIR"
-sudo cp -r "$SOURCE_DIR" "$TARGET_DIR"
+mkdir -p "$TARGET_DIR"
+cp -r "$SOURCE_DIR/geoip" "$TARGET_DIR"
