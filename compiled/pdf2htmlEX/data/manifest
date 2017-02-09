@@ -11,24 +11,27 @@
 #
 # Special
 # If a line contains """ only, all text until next """ will be included
+# #TEST_IGNORE_BEGIN & #TEST_IGNORE_END are used for unittest
 
 #############
 # Declaration - Do not modify
 """
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="utf-8">
-<meta name="generator" content="pdf2htmlEX">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta charset="utf-8"/>
+<meta name="generator" content="pdf2htmlEX"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 """
 
 #############
 # Styles 
 # base CSS styles - Do not modify
 @base.min.css
+
 # fancy CSS styles - Optional
 @fancy.min.css
+
 # PDF specific CSS styles - Do not modify
 $css
 
@@ -38,7 +41,9 @@ $css
 
 # compatibility.min.js, extracted from PDF.js
 # To support old browsers like IE9
-@compatibility.min.js
+#TEST_IGNORE_BEGIN
+@compatibility.js
+#TEST_IGNORE_END
 
 # entry point of pdf2htmlEX.Viewer
 # You can override default configuration by passing an object to the constructor of Viewer
@@ -47,6 +52,7 @@ $css
 # pdf2htmlEX.defaultViewer = new pdf2htmlEX.Viewer({
 #   'key_handler' : false 
 # });
+#TEST_IGNORE_BEGIN
 @pdf2htmlEX.min.js
 """
 <script>
@@ -55,6 +61,8 @@ try{
 }catch(e){}
 </script>
 """
+#TEST_IGNORE_END
+
 
 #############
 # Do not modify
@@ -70,6 +78,8 @@ try{
 # You can add a class 'opened' here if you want it always opened or you don't use pdf2htmlEX.js
 # e.g. 
 # <div id="sidebar" class="opened">
+
+#TEST_IGNORE_BEGIN
 """
 <div id="sidebar">
 """
@@ -82,6 +92,7 @@ $outline
 </div>
 </div>
 """
+#TEST_IGNORE_END
 
 #############
 # The container of PDF pages
@@ -99,6 +110,8 @@ $pages
 # shown when loading a page via ajax
 # The default appearance should be invisible
 # The 'active' class will be added when it is used
+
+#TEST_IGNORE_BEGIN
 """
 <div class="loading-indicator">
 """
@@ -106,6 +119,7 @@ $pages
 """
 </div>
 """
+#TEST_IGNORE_END
 
 #############
 # Do not modify
