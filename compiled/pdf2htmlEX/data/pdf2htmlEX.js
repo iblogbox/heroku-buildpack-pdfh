@@ -1,10 +1,4 @@
 /* vim: set shiftwidth=2 tabstop=2 autoindent cindent expandtab filetype=javascript : */
-/** 
- * @license pdf2htmlEX.js: Core UI functions for pdf2htmlEX 
- * Copyright 2012,2013 Lu Wang <coolwanglu@gmail.com> and other contributors 
- * https://github.com/coolwanglu/pdf2htmlEX/blob/master/share/LICENSE 
- */
-
 /*
  * Attention:
  * This files is to be optimized by closure-compiler, 

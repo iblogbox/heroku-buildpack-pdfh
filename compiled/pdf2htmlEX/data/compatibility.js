@@ -15,11 +15,6 @@
  * limitations under the License.
  */
 
-/** @license Copyright 2012 Mozilla Foundation 
- * Copyright 2013 Lu Wang <coolwanglu@gmail.com>
- * Apache License Version 2.0 
- */
-
 'use strict';
 
 // HTMLElement classList property
