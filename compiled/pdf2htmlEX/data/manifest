@@ -115,7 +115,7 @@ $pages
 """
 <div class="loading-indicator">
 """
-@pdf2htmlEX-64x64.png
+@loading-64.png
 """
 </div>
 """
